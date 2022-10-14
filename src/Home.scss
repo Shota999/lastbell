@@ -55,13 +55,74 @@ $bgcolor: #fbfbfb;
             .left{
                 border: $border;
                 background: $bgcolor;
-                width: 300px;
-                height: 500px;
                 padding: 50px 20px;
+                width: 531px;
 
-                img{
-                    margin-right: 15px;
+                .slider_button{
+
+                    img{
+                        margin-right: 15px;
+                    }
                 }
+                .text_container{
+                    h2{
+                        font-size: 20px;
+                        color: #16314f;
+                        margin-bottom: 20px;
+                    }
+                    p{
+                        font-size: 14px;
+                        margin-top: 10px;
+                    }
+                    .text_innerContainer{
+                        margin-top: 40px;
+
+                        span{
+                            color: #ff5000;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            .middle{
+                display: flex;
+                flex-direction: column;
+
+                form{
+                    display: flex;
+                    flex-direction: column;
+
+                    .input{
+                        display: flex;
+                        align-items: center;
+                        width: 385px;
+                        height: 97px;
+                        border: 1px solid #ece8e5;
+                        margin-top: 49px;
+
+                        span{
+                            font-size: 16px;
+                            padding-left: 30px;
+                        }
+                        input{
+                            width: 100%;
+                            border: none;
+                            background-color: transparent;
+                            outline: none;
+                            text-align: right;
+                            font-size: 18px;
+                            color: #ff5000;
+                            padding-right: 44px;
+                        }
+                        &:first-child{
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+            .right{
+                width: 719px;
+                // background-image: url(../images/background.png);
             }
         }
     }
