@@ -5,7 +5,6 @@ const Home = () => {
         <div className="main">
             <Header />
             <div className="container">
-
                 <div className="left">
                     <div className="slider_button">
                         <img src="../images/slider_button.png" alt="button" />
@@ -31,27 +30,35 @@ const Home = () => {
                             <input type="text"/>
                         </div>
                         <div className="input">
-                            <span>სახელი</span>
+                            <span>გვარი</span>
                             <input type="text"/>
                         </div>
                         <div className="input">
-                            <span>სახელი</span>
+                            <span>სკოლა</span>
                             <input type="text"/>
                         </div>
                         <div className="input">
-                            <span>სახელი</span>
+                            <span>ქალაქი</span>
                             <input type="text"/>
                         </div>
                         <div className="input">
-                            <span>სახელი</span>
+                            <span>ტელეფონის ნომერი</span>
                             <input type="text"/>
                         </div>
                     </form>
                 </div>
                 <div className="right">
-
+                    <div className="background"></div>
+                    <button>გააენეფტე
+                        <img src="../images/button_image1.png" className="button_image1" alt="gutton_image" />
+                        <img src="../images/button_image2.png" className="button_image2" alt="gutton_image" />
+                        <img src="../images/send.png" alt="send" />
+                    </button>
                 </div>
             </div>
+            <footer>
+                sadasd
+            </footer>
         </div>
      );
 }

@@ -99,10 +99,21 @@ $bgcolor: #fbfbfb;
                         height: 97px;
                         border: 1px solid #ece8e5;
                         margin-top: 49px;
+                        background-color: #fbf9f8;
+                        position: relative;
+
+                        
 
                         span{
                             font-size: 16px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            height: 100%;
                             padding-left: 30px;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
                         }
                         input{
                             width: 100%;
@@ -113,6 +124,11 @@ $bgcolor: #fbfbfb;
                             font-size: 18px;
                             color: #ff5000;
                             padding-right: 44px;
+                            height: 100%;
+
+                            &:focus{
+                                border: 1px solid #000;
+                            }
                         }
                         &:first-child{
                             margin-top: 0;
@@ -122,8 +138,69 @@ $bgcolor: #fbfbfb;
             }
             .right{
                 width: 719px;
-                // background-image: url(../images/background.png);
+                
+
+                .background{
+                    width: 100%;
+                    height: 100%;
+                    background-image: url(../public/images/background.png);
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                }
+                button{
+                    width: 100%;
+                    border: 1px solid #16314f;
+                    margin-top: 49px;
+                    padding: 30px;
+                    background-color: #fbfbfb;
+                    font-size: 18px;
+                    color: #16314f;
+                    position: relative;
+                    cursor: pointer;
+                    transition: .2s ease-in-out;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: bold;
+
+                    .button_image1{
+                        position: absolute;
+                        top: 0;
+                        left: -70px;
+                        transition: .2s ease-in-out;
+                    }
+                    .button_image2{
+                        position: absolute;
+                        bottom: 0;
+                        right: -60px;
+                        transition: .2s ease-in-out;
+                    }
+                    img{
+                        margin-left: 10px;
+                    }
+                    
+                    &:hover{
+                        border: 1px solid #ff5000;
+
+                        .button_image1{
+                            display: block;
+                            position: absolute;
+                            top: 0;
+                            left: 20px;
+                        }
+                        .button_image2{
+                            display: block;
+                            position: absolute;
+                            bottom: 0;
+                            right: 20px;
+                        }
+                    }
+                }
             }
+        }
+        footer{
+            margin-top: 20rem;
         }
     }
 }
